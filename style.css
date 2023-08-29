@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  display: block;
+}
+
+.slider-label{
+  color:antiquewhite;
+  font-size: 12px;
+  letter-spacing: .1rem;
+  position: relative;
+  left: 312px;
+ top: -200px;
+}
+
+.slider{
+  position: relative;
+  left: 310px;
+  top: -240px;
+  height: 1px;  
+  width: 200px;
+}
+
+.btn{
+  background-color: aliceblue;
+  width: 60px;
+  text-align: center;
+  border: 0px;
+  border-radius: 4PX;
+  color:black;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  position: relative;
+  top: -227px;
+  left: 150px;
+}
