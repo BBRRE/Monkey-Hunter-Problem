@@ -11,7 +11,7 @@ class monkey{
     }
   
     drawMonkey(){
-      fill(255,173,0)
+      fill(76,75,22)
       noStroke()
       rect(this.originX,this.originY,50,50)
     }

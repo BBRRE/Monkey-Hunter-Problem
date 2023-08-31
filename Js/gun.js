@@ -8,6 +8,7 @@ class gun{
   
     shoot(){
       this.originX += this.velocityX
+      
     }
   
     gravity(){
@@ -16,7 +17,7 @@ class gun{
     }
   
     drawGun(){
-      fill(210, 39, 48)
+      fill(231, 177, 10)
       noStroke()
       rect(this.originX,this.originY,25,10,0,5,5,0)
     }

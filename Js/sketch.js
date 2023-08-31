@@ -5,7 +5,9 @@ let bulletSpeed = 28
 let gun1,monkey1
 let follow;
 let bgGraphic;
-let div = document.querySelector('.container')
+let div = document.querySelector('.canvas1-container')
+
+
 
 function setup() {
   createCanvas(400,225,WEBGL).parent(div)
@@ -17,7 +19,7 @@ function setup() {
 }
 
 function draw() {
-  background(0)
+  background(33,42,66)
   drawStars()
   for(i = 0; i < timeSteps; i++){
   if(gun1.isColide(monkey1)){
@@ -34,3 +36,4 @@ function draw() {
   gun1.drawGun()
   monkey1.drawMonkey()
 }
+
