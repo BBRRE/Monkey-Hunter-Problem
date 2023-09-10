@@ -172,17 +172,13 @@ h3{
 }
 
 .img{
-  width: 400px;
-  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 img{
-  width: 500px;
-
-  height: 100%;
+  object-fit: cover;
 }
 
 div{
