@@ -1,7 +1,7 @@
 let div = document.querySelector('.canvas2-cont')
-const g = 0.02;
-let xv = 10;
-let timeSteps = 1000
+const g = 0.2;
+let xv = 2;
+let timeSteps = 0
 let extraCanvas;
 let gunArr = []
 
@@ -65,7 +65,7 @@ function setup(){
     extraCanvas = createGraphics(400,800)
     extraCanvas.clear()
     canvas2.parent(div)
-    gunn = new gun2(2,255)
+    gunn = new gun2(6,255)
     gunArr.push(gunn)
     monkeyy = new monkey2()
     div2 = createDiv('click for new projectile speed')
@@ -86,9 +86,10 @@ function draw(){
     monkeyy.draw()
     image(extraCanvas,0,0)
 
+    frameRate(120)
 }
 
 function mousePressed(){
     monkeyy = new monkey2()
-    gunn = new gun2(random(0.5,2),random(255),random(255),random(255))
+    gunn = new gun2(random(1.55,6),random(255),random(255),random(255))
 }

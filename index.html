@@ -14,22 +14,54 @@
   </head>
 
   <body>
-
-    <div class="grid-container">
-      <div class="filler"></div>
-      <div class="filler2"></div>
-      <div class="title"><h1 style="text-align: center;">Monkey and Hunter problem</h1></div>
-      <div class="premise"><h1>The Premise</h1><br><span>A hunter tries to shoot a monkey but knnows that as soon as he pulls the trigger the monkey will let go and enter freeFall</span></div>
-      <div class="question"><h1>The question</h1><br><span>Where should the Hunter shoot? <br> Above the monkey <br> At the monkey <br> Below the monkey</span></div>
-      <div class="breakdown"><h1>breakdown</h1> <br><span><h3>I will split the question in two: </h3> <br> How does gravity Work <br> <br> Treating the horizontal and veritical movement seperatly</span></div>
-      <div class="grav"><h1>Gravity</h1><br><span>Gravity is a constant, meaning if you drop two items from the same height in a vacuum, they will hit the ground at the same time regardless of horizontal speed(as shown in the simulation on the right)<br> </span></div>
-      <a class="more" href="canvas2.html"><div class="more"><h1>Improved sim</h1> <br><span>A more improved simulation where the bullet shoots up at the monkey. Also includes math behind concept <br><span style="text-align: center; margin-top: 10%;" >Click Here</span></b></span></div><a/>
-      <div class="canvas1-container"></div>
     
-    
-    
+    <h1 style="text-align: center;">Monkey and Hunter problem</h1>
+    <br><br><br>
+    <h3>The Premise</h3>
+    <div >A hunter tries to shoot a monkey up in a tree. The hunter knows that when he pulls the 
+      trigger the monkey will release the branch at the same time and enter free fall. <br> <br>
+      Should the hunter aim:
+      <ul style="list-style-type:none" >
+        <li><b>></b> At the monkey </li>
+        <li><b>></b> Below the monkey </li>
+        <li><b>></b> At the monkey</li>
+      </ul>
     </div>
-      <script src="Js/sketch.js"></script>
+    <h3>Setting the foundation</h3>
+    <div>In order to tackle this problem you need to split each 'object' into their components. This means splitting the vertical and horizontal motion of the 
+      Monkey and Hunter's bullet. <br>
+      <h4>Monkey</h4>
+      <h5>Vertical motion:</h5>
+      <span>The monkey lets go off the branch so the only force acting on the monkey is gravity</span>
+      <h5>Horizontal motion:</h5>
+      <span>There is no horizontal motion.</span>
+      <h4>Bullet</h4>
+      <h5>Vertical motion:</h5>
+      <span>When the trigger is pulled the vertical component of the shot acts upwards onto the bullet.</span>
+      <span>Gravity also acts down on the bullet</span>
+      <h5>Horizontal motion:</h5>
+      <span>When the trigger is pulled the horizontal component acts on the bullet</span>
+    </div>
+
+    <h3>Simple simulation</h3>
+    <div>The simulation below shows what would happen if the hunter shot the monkey head on. 
+    </div>
+    
+      <div style="margin: 0 auto;" class="canvas1-container"></div>
+  
+    <div> The simulation above was used to show how gravity is a constant and helps illustrate how the vertical and 
+      horizontal components can be seperated <br> Regardless of the speed of the bullet (Horizontal component) both objects
+      will colide as the same gravity (vertical component) is applied to both.
+    </div>
+
+    <h3>More advanced simulation</h3>
+    <div>
+      The simulation below is on another page, This shows a more acurate simulation to the topic, Monkey and Hunter problem, 
+      as it shows hunter shooting up at the monkey and the maths behing it.
+      <a style="text-decoration: none;" href="canvas2.html"><Button style="width: 40%; height: 100px; font-size: 40px; display: block; margin: 10px auto;max-width: 400px; min-width: 200px;">Simulation V.2</Button></a>
+    </div>
+
+    <script src="Js/sketch.js"></script>
     <script src="Js/gun.js"></script>
     <script src="Js/monkey.js"></script>
     <script src="Js/domele.js"></script>
