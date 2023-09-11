@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Gravity</title>
     <link rel="icon" type="image/x-icon" href="Assets/Apple.png">
@@ -22,32 +22,32 @@
       trigger the monkey will release the branch at the same time and enter free fall. <br> <br>
       Should the hunter aim:
       <ul style="list-style-type:none" >
+        <li><b>></b> Above the monkey </li>
         <li><b>></b> At the monkey </li>
-        <li><b>></b> Below the monkey </li>
-        <li><b>></b> At the monkey</li>
+        <li><b>></b> Below the monkey</li>
       </ul>
     </div>
     <h3>Setting the foundation</h3>
-    <div>In order to tackle this problem you need to split each 'object' into their components. This means splitting the vertical and horizontal motion of the 
+    <div>In order to tackle this problem you need to split each 'vector' into their components. This means splitting the vertical and horizontal motion of the 
       Monkey and Hunter's bullet. <br>
       <h4>Monkey</h4>
       <h5>Vertical motion:</h5>
-      <span>The monkey lets go off the branch so the only force acting on the monkey is gravity</span>
+      <span>The monkey lets go off the branch so the only force acting on the monkey is gravity.</span>
       <h5>Horizontal motion:</h5>
       <span>There is no horizontal motion.</span>
       <h4>Bullet</h4>
       <h5>Vertical motion:</h5>
       <span>When the trigger is pulled the vertical component of the shot acts upwards onto the bullet.</span>
-      <span>Gravity also acts down on the bullet</span>
+      <span>Gravity also acts down on the bullet.</span>
       <h5>Horizontal motion:</h5>
-      <span>When the trigger is pulled the horizontal component acts on the bullet</span>
+      <span>When the trigger is pulled the horizontal component acts on the bullet.</span>
     </div>
 
     <h3>Simple simulation</h3>
     <div>The simulation below shows what would happen if the hunter shot the monkey head on. 
     </div>
     
-      <div style="margin: 0 auto;" class="canvas1-container"></div>
+      <div style="margin: 10px auto;width: 100%;display: block;" class="canvas1-container"></div>
   
     <div> The simulation above was used to show how gravity is a constant and helps illustrate how the vertical and 
       horizontal components can be seperated <br> Regardless of the speed of the bullet (Horizontal component) both objects
@@ -58,7 +58,7 @@
     <div>
       The simulation below is on another page, This shows a more acurate simulation to the topic, Monkey and Hunter problem, 
       as it shows hunter shooting up at the monkey and the maths behing it.
-      <a style="text-decoration: none;" href="canvas2.html"><Button style="width: 40%; height: 100px; font-size: 40px; display: block; margin: 10px auto;max-width: 400px; min-width: 200px;">Simulation V.2</Button></a>
+      <a style="text-decoration: none;" href="canvas2.html"><Button style="width: 40%; height: 100px; font-size: 40px; display: block; margin: 10px auto;max-width: 400px; min-width: 200px;border: 0px;background-color: #182b55; color: #e6b870;border-radius: 5px;;">Simulation V.2</Button></a>
     </div>
 
     <script src="Js/sketch.js"></script>
