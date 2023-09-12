@@ -1,8 +1,6 @@
 # Monkey-Hunter-Problem
-Includes a more intuitive simulation to explain the Monkey and Hunter Problem
 
-https://bbrre.github.io/Monkey-Hunter-Problem/
+## Webpage that attempts to bring a more intuitive answer to the Monkey and Hunter problem
 
-Can't get the website to be responsive on mobiles so best to avoid it.
-
-Would appreciate any suggestions to make the website look better and improve the p5 sketches
+The Monkey Hunter problem is often used to demonstrate the effects of gravity on projectile motion.
+### The question goes
