@@ -3,6 +3,11 @@
   font-family: sans-serif;
 }
 
+body{
+  width:80%;
+  margin:auto;
+}
+
 html, body {
   margin: 1px;
   padding: 0;
