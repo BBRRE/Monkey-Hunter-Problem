@@ -4,7 +4,7 @@
 }
 
 body{
-  width:80%;
+  max-width: 1000px;
   margin:auto;
 }
 
@@ -12,10 +12,6 @@ html, body {
   margin: 1px;
   padding: 0;
   font-size: large;
-}
-
-body{
-  width: 100%;
 }
 
 canvas {
