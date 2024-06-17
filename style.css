@@ -6,9 +6,11 @@
 body{
   max-width: 1000px;
   margin:auto;
+    padding: 0;
+  font-size: large;
 }
 
-html, body {
+html{
   margin: 1px;
   padding: 0;
   font-size: large;
